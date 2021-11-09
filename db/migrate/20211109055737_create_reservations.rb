@@ -6,7 +6,6 @@ class CreateReservations < ActiveRecord::Migration[5.2]
       t.integer :row
       t.integer :column
       t.boolean :paid
-      t.integer :id
 
       t.timestamps
     end

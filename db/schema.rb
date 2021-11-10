@@ -16,9 +16,10 @@ ActiveRecord::Schema.define(version: 2021_11_09_060833) do
   enable_extension "plpgsql"
 
   create_table "airplanes", force: :cascade do |t|
-    t.integer "rows"
-    t.integer "columns"
     t.text "name"
+    t.string "rows"
+    t.string "integer"
+    t.string "columns"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_11_09_060833) do
     t.integer "number"
     t.text "origin"
     t.text "destination"
-    t.datetime "date"
+    t.date "date"
     t.integer "airplane_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

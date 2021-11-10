@@ -29,9 +29,9 @@ print "creating flights..."
 
 Flight.destroy_all
 
-f1= Flight.create! number: 'A232', date: '2021-11-01', origin: 'new york', destination: 'melbourne'
-f2= Flight.create! number: 'D222', date: '2021-11-01', origin: 'melbourne', destination: 'new york'
-f3= Flight.create! number: 'G302', date: '2021-11-01', origin: 'singapore', destination: 'sydney'
+f1= Flight.create! number: 'A232', date: '2021-11-01', origin: 'new york', destination: 'melbourne', :airplane_id = 1
+f2= Flight.create! number: 'D222', date: '2021-11-01', origin: 'melbourne', destination: 'new york', :airplane_id = 2
+f3= Flight.create! number: 'G302', date: '2021-11-01', origin: 'singapore', destination: 'sydney', :airplane_id = 3
 
 
 puts "created #{Flight.count} flights"

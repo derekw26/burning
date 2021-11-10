@@ -9,6 +9,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <nav>
+    <%= link_to("All flights", flights_path) %>
+    <%= link_to("All planes", airplanes_path) %>
+</nav>
+
   <body>
     <%= yield %>
   </body>

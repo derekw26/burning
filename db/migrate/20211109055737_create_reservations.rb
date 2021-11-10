@@ -6,7 +6,8 @@ class CreateReservations < ActiveRecord::Migration[5.2]
       t.integer :row
       t.integer :column
       t.boolean :paid
-      t.integer :id
+      t.integer "user_id"
+      t.integer "flight_id"
 
       t.timestamps
     end

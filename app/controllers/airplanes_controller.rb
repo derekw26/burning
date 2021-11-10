@@ -8,7 +8,9 @@ class AirplanesController < ApplicationController
 
   # GET /airplanes/1 or /airplanes/1.json
   def show
+    @airplane = Airplane.find(params[:id])
   end
+  #  find all the airplanes using their id and show it in the page 
 
   # GET /airplanes/new
   def new

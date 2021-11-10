@@ -16,8 +16,8 @@
   <tbody>
     <% @airplanes.each do |airplane| %>
       <tr>
-        <td><%= airplane.row %></td>
-        <td><%= airplane.column %></td>
+        <td><%= airplane.rows %></td>
+        <td><%= airplane.columns %></td>
         <td><%= airplane.name %></td>
         <td><%= link_to 'Show', airplane %></td>
         <td><%= link_to 'Edit', edit_airplane_path(airplane) %></td>

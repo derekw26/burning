@@ -10,7 +10,7 @@ class AirplanesController < ApplicationController
   def show
     @airplane = Airplane.find(params[:id])
   end
-  #  find all the airplanes using their id and show it in the page 
+  #  find all the airplanes using their id and show it in the page
 
   # GET /airplanes/new
   def new
@@ -66,6 +66,6 @@ class AirplanesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def airplane_params
-      params.require(:airplane).permit(:row, :column, :name, :id)
+      params.require(:airplane).permit(:rows, :columns, :name, :id)
     end
 end
